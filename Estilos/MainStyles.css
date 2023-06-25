@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #0a141d;
+}
+
+.header {
+  background-image: url(Images/banner.jpg);
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.header p {
+  font-size: 25px;
+}
+.header h1 {
+  font-size: 65px;
+  padding: 15px 0;
+}
+@media screen and (max-width: 432px) {
+  .header {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    padding: 35px 0;
+  }
+  .header p {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 20px;
+    grid-gap: 5px;
+    padding: auto;
+  }
+  .header h1 {
+    grid-template-columns: repeat(1, 1fr);
+    font-size: 35px;
+    grid-gap: 5px;
+    padding: auto;
+  }
+}
+
+.div-nav {
+  background-color: #0a1a2a;
+  text-align: center;
+  padding: 20px;
+}
+.div-nav nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  padding: 5px 15px;
+  border-radius: 30px;
+  font-size: auto;
+}
+.div-nav nav a:hover {
+  background-color: lightblue;
+  color: black;
+}
+.div-nav nav .fas {
+  margin-right: 12px;
+}
+.div-nav nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.div-nav nav ul li {
+  display: inline-block;
+}
+.div-nav nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+}
+.div-nav nav ul li ul {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #0a1a2a;
+}
+.div-nav nav ul li:hover > ul {
+  display: inherit;
+}
+.div-nav nav ul li ul li {
+  width: 200px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+.div-nav nav ul li ul li a {
+  padding: 8px 10px;
+  color: white;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a141d;
+}
+
+.section {
+  margin-top: 830px;
+  margin-bottom: 1px;
+  width: 65%;
+  height: 270%;
+  background-color: #0a141d;
+}
+.section .title {
+  color: white;
+  font-size: 28px;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+.section .imagen {
+  margin-top: 20px;
+  text-align: center;
+}
+.section .imagen img {
+  width: 55%;
+}
+.section .parrafo {
+  text-align: center;
+  font-size: larger;
+  color: white;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+.section .FirstButtons {
+  margin-top: 25px;
+  text-align: center;
+}
+.section .FirstButtons a {
+  display: inline-block;
+  padding: 10px 25px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+.section .FirstButtons a:hover {
+  background-color: lightblue;
+  color: black;
+}
+.section .FirstButtons a:focus {
+  outline: none;
+  box-shadow: 0 0 5px lightblue;
+}
+.section .FirstButtons a:active {
+  background-color: white;
+  transform: translateY(1px);
+}
+
+.ClassTable {
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 5px;
+  height: 90vh;
+  width: 110vh;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+.ClassTable h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+}
+.ClassTable .table__body {
+  width: 95%;
+  max-height: calc(89% - 1.6rem);
+  background-color: white;
+  color: black;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+.ClassTable .table__body table {
+  width: 100%;
+}
+.ClassTable .table__body td img {
+  width: 50px;
+  height: 50px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.ClassTable .table__body table,
+.ClassTable .table__body th,
+.ClassTable .table__body td {
+  border-collapse: collapse;
+  padding: 1rem;
+  text-align: left;
+}
+.ClassTable .table__body thead th {
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 56, 231, 0.333);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.ClassTable .table__body thead th:hover {
+  color: lightyellow;
+}
+.ClassTable .table__body tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.0431372549);
+}
+.ClassTable .table__body tbody tr {
+  --delay: .1s;
+  transition: 0.5s ease-in-out var(--delay), background-color 0s;
+}
+.ClassTable .table__body tbody tr:hover {
+  background-color: lightgray !important;
+}
+.ClassTable .table__body tbody tr td,
+.ClassTable .table__body tbody tr td p,
+.ClassTable .table__body tbody tr td img {
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 1000px) {
+  .ClassTable td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
+}
+
+.aside {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 30%;
+  height: 100%;
+  background-color: #0a141d;
+}
+.aside .title-2 {
+  color: white;
+  font-size: 28px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+.aside .img-aside {
+  margin-top: 20px;
+  width: 200px;
+  height: 100px;
+}
+.aside a {
+  text-decoration: none;
+}
+.aside .EnlaceTexto {
+  text-align: center;
+  font-size: larger;
+  color: white;
+  margin-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 18px;
+}
+
+.ClassTable-2 {
+  text-align: center;
+  margin-top: 5px;
+  height: 90vh;
+  width: 62vh;
+  border-radius: 0.8rem;
+  overflow: hidden;
+  font-size: 14px;
+}
+.ClassTable-2 h1 {
+  color: white;
+  font-size: 28px;
+  padding-top: 10px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.ClassTable-2 .table__body-2 {
+  width: 95%;
+  max-height: calc(89% - 1.6rem);
+  background-color: white;
+  color: black;
+  margin: 0.8rem auto;
+  border-radius: 0.6rem;
+  overflow: auto;
+  overflow: overlay;
+}
+.ClassTable-2 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.ClassTable-2 table th,
+.ClassTable-2 table td {
+  padding: 1rem;
+  text-align: left;
+}
+.ClassTable-2 table thead th {
+  top: 0;
+  left: 0;
+  background-color: rgba(16, 56, 231, 0.333);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.ClassTable-2 table thead th:hover {
+  color: lightyellow;
+}
+.ClassTable-2 table tbody tr {
+  --delay: .1s;
+  transition: 0.5s ease-in-out var(--delay), background-color 0s;
+}
+.ClassTable-2 table tbody tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.0431372549);
+}
+.ClassTable-2 table tbody tr:hover {
+  background-color: lightgray !important;
+}
+.ClassTable-2 table tbody tr td,
+.ClassTable-2 table tbody tr p,
+.ClassTable-2 table tbody tr img {
+  transition: 0.2s ease-in-out;
+}
+@media (max-width: 1000px) {
+  .ClassTable-2 td:not(:first-of-type) {
+    min-width: 12.1rem;
+  }
+}
+
+.footer {
+  margin-top: 770px;
+  width: 100%;
+  background-color: #0a141d;
+}
+.footer .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footer .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .grupo-1 .box figure img {
+  width: 200px;
+}
+.footer .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo-1 .box .texto-1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+  text-align: center;
+}
+.footer .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.footer .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footer .grupo-1 .red-social a:hover {
+  color: lightblue;
+}
+.footer .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.footer .grupo-2 small {
+  font-size: 15px;
+}
+@media screen and (max-width: 800px) {
+  .footer .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}/*# sourceMappingURL=MainStyles.css.map */

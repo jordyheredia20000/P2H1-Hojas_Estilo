@@ -235,19 +235,19 @@ a:hover{
 }
 
 /* ESTILOS FOOTER */
-.footer{
+.footerLogin{
   width: 100%;
   background-color: #0a141d;
   color: white;
 }
 
-.footer .grupo-2{
+.footerLogin .grupo-2{
   background-color: #0a1a2a;
   padding: 15px 10px;
   text-align: center;
   color: #fff;
 }
 
-.footer .grupo-2 small{
+.footerLogin .grupo-2 small{
   font-size: 15px;
 }

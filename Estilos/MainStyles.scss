@@ -353,43 +353,48 @@ body {
 	  overflow: overlay;
 	}
   
-	.table {
+	table {
 	  width: 100%;
+	  border-collapse: collapse;
   
-	  th, td {
-		border-collapse: collapse;
+	  th,
+	  td {
 		padding: 1rem;
 		text-align: left;
 	  }
   
-	  thead th {
-		top: 0;
-		left: 0;
-		background-color: rgba(16, 56, 231, 0.333);
-		cursor: pointer;
-		text-transform: capitalize;
+	  thead {
+		th {
+		  top: 0;
+		  left: 0;
+		  background-color: rgba(16, 56, 231, 0.333);
+		  cursor: pointer;
+		  text-transform: capitalize;
   
-		&:hover {
-		  color: lightyellow;
+		  &:hover {
+			color: lightyellow;
+		  }
 		}
 	  }
   
-	  tbody tr:nth-child(even) {
-		background-color: #0000000b;
-	  }
+	  tbody {
+		tr {
+		  &:nth-child(even) {
+			background-color: #0000000b;
+		  }
   
-	  tbody tr {
-		--delay: .1s;
-		transition: .5s ease-in-out var(--delay), background-color 0s;
+		  --delay: .1s;
+		  transition: .5s ease-in-out var(--delay), background-color 0s;
   
-		&:hover {
-		  background-color: lightgray !important;
-		}
+		  &:hover {
+			background-color: lightgray !important;
+		  }
   
-		td,
-		td p,
-		td img {
-		  transition: .2s ease-in-out;
+		  td,
+		  p,
+		  img {
+			transition: .2s ease-in-out;
+		  }
 		}
 	  }
 	}
@@ -400,6 +405,7 @@ body {
 	  }
 	}
   }
+  
   
 
 // FOOTER

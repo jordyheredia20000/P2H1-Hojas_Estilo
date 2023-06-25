@@ -344,7 +344,7 @@ thead th:hover {
     font-size: 14px;
 }
 
-.ClassTable-2 .table__body-2 {
+.table__body-2 {
     width: 95%;
     max-height: calc(89% - 1.6rem);
     background-color: white;
@@ -355,17 +355,17 @@ thead th:hover {
     overflow: overlay;
 }
 
-.ClassTable-2 .table {
+table {
     width: 100%;
 }
 
-.ClassTable-2 .table, th, td {
+table, th, td {
     border-collapse: collapse;
     padding: 1rem;
     text-align: left;
 }
 
-.ClassTable-2 thead th {
+thead th {
     top: 0;
     left: 0;
     background-color: rgba(16, 56, 231, 0.333);
@@ -373,32 +373,32 @@ thead th:hover {
     text-transform: capitalize;
 }
 
-.ClassTable-2 tbody tr:nth-child(even) {
+tbody tr:nth-child(even) {
     background-color: #0000000b;
 }
 
-.ClassTable-2 tbody tr {
+tbody tr {
     --delay: .1s;
     transition: .5s ease-in-out var(--delay), background-color 0s;
 }
 
-.ClassTable-2 tbody tr:hover {
+tbody tr:hover {
     background-color: lightgray !important;
 }
 
-.ClassTable-2 tbody tr td,
-.ClassTable-2 tbody tr td p,
-.ClassTable-2 tbody tr td img {
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
     transition: .2s ease-in-out;
 }
 
 @media (max-width: 1000px) {
-    .ClassTable-2 td:not(:first-of-type) {
+    td:not(:first-of-type) {
         min-width: 12.1rem;
     }
 }
 
-.ClassTable-2 thead th:hover {
+thead th:hover {
     color: lightyellow;
 }
 
