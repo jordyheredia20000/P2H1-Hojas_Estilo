@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans';
+}
+
+/* ESTILOS HEADER */
+#header{
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+#header p{
+	font-size: 25px;
+}
+
+#header h1{
+	font-size: 65px;
+	padding: 15px 0;
+}
+
+@media screen and (max-width:432px){
+    #header{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:5px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:432px){
+    #header p{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 20px;
+        grid-gap: 5px;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width:432px){
+    #header h1{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 35px;
+        grid-gap:5px;
+        padding: auto;
+    }
+}
+
+/* ESTILOS NAV */
+#div-nav{
+	background-color: #0a1a2a;
+	text-align: center;
+	padding: 20px;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	font-size: auto;
+}
+
+nav a:hover {
+	background-color: lightblue;
+	color: black;
+}
+
+#div-nav .fas{
+	margin-right: 12px;
+}
+
+nav ul {list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav ul li {
+    display: inline-block;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+  
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0a1a2a;
+}
+  
+nav ul li:hover > ul {
+    display: inherit;
+}
+  
+nav ul li ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+  
+nav ul li ul li a {
+    padding: 8px 10px;
+    color: white;
+}
+
+/* ESTILOS BODY */
+.contenido{
+    background-color: #0a141d;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-info{
+    display: table-cell;
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+}
+
+.main-info:nth-child(1) h1{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.main-info:nth-child(2) h1{
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.main-info:nth-child(1) p{
+    margin-bottom: 15px;
+}
+
+.main-info:nth-child(2) p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contenido .main-info .main-img-1{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 65px;
+}
+
+.contenido .main-info .main-img-2{
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 65%;
+    margin-left: 115px;
+}
+
+.my-button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+  
+.my-button:hover {
+    background-color: lightblue;
+    color: black;
+}
+  
+.my-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px lightblue;
+}
+  
+.my-button:active {
+    background-color: white;
+    transform: translateY(1px);
+}
+
+.my-button-2 {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+  
+.my-button-2:hover {
+    background-color: lightblue;
+    color: black;
+}
+  
+.my-button-2:focus {
+    outline: none;
+    box-shadow: 0 0 5px lightblue;
+}
+  
+.my-button-2:active {
+    background-color: white;
+    transform: translateY(1px);
+}
+
+.my-button-3 {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    margin-bottom: 60px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+  
+.my-button-3:hover {
+    background-color: lightblue;
+    color: black;
+}
+  
+.my-button-3:focus {
+    outline: none;
+    box-shadow: 0 0 5px lightblue;
+}
+  
+.my-button-3:active {
+    background-color: white;
+    transform: translateY(1px);
+}
+
+/* ESTILOS TABLA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main.table {
+    width: 82vw;
+    height: 90vh;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.table__body {
+    width: 95%;
+    max-height: calc(89% - 1.6rem);
+    background-color: white;
+    color: black;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+    overflow: overlay;
+}
+
+table {
+    width: 100%;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    padding: 1rem;
+    text-align: left;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(16, 56, 231, 0.333);
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr {
+    --delay: .1s;
+    transition: .5s ease-in-out var(--delay), background-color 0s;
+}
+
+tbody tr:hover {
+    background-color: lightgray !important;
+}
+
+tbody tr td,
+tbody tr td p,
+tbody tr td img {
+    transition: .2s ease-in-out;
+}
+
+
+@media (max-width: 1000px) {
+    td:not(:first-of-type) {
+        min-width: 12.1rem;
+    }
+}
+
+thead th:hover {
+    color: lightyellow;
+}
+
+/* ESTILOS CONTACTO */
+.contacto {
+    text-align: center;
+    font-size: 2em;
+}
+
+.contact-wrapper {
+    margin-top: 40px;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    background: white;
+    margin-bottom: 17px ;
+    color: black;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button{
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: black;
+    border-bottom: 1px solid #d63031;
+}
+
+.contact-form form button {
+    background: lightblue;
+    color: black;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: black;
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background: #000;
+}
+
+.contact-info .fas{
+    margin-right: 10px;
+}
+
+.contact-info h4, .contact-info ul, .contact-info {
+    margin: 0 0 1rem 0;
+}
+
+.contact-info p{
+    text-align: left;
+}
+
+/* LARGE SIZE */
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media(min-width: 700px) {
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
+    }
+}
+
+/* ESTILOS FOOTER */
+.footer{
+    width: 100%;
+    background-color: #0a141d;
+    color: white;
+}
+
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img{
+    width: 200px;
+}
+
+.footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box .texto-1{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+	text-align: center;
+}
+
+.footer .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+	text-align: center;
+}
+
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover{
+    color: lightblue;
+}
+
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px){
+    #footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans';
+}
+/* ESTILOS HEADER */
+.header{
+	background-image: url(img/banner.jpg);
+	background-size: cover;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.header p{
+	font-size: 25px;
+}
+
+.header h1{
+	font-size: 65px;
+	padding: 15px 0;
+}
+
+@media screen and (max-width:432px){
+    .header{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:5px;
+        padding: 35px 0px;
+    }
+}
+
+@media screen and (max-width:432px){
+    .header p{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 20px;
+        grid-gap: 5px;
+        padding: auto;
+    }
+}
+
+@media screen and (max-width:432px){
+    .header h1{
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 35px;
+        grid-gap:5px;
+        padding: auto;
+    }
+}
+
+/* ESTILOS NAV */
+.div-nav{
+	background-color: #0a1a2a;
+	text-align: center;
+	padding: 20px;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	margin: 0 20px;
+	padding: 5px 15px;
+	border-radius: 30px;
+	font-size: auto;
+}
+
+nav a:hover {
+	background-color: lightblue;
+	color: black;
+}
+
+.div-nav .fas{
+	margin-right: 12px;
+}
+
+nav ul {list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav ul li {
+    display: inline-block;
+}
+  
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+  
+nav ul li ul {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0a1a2a;
+}
+  
+nav ul li:hover > ul {
+    display: inherit;
+}
+  
+nav ul li ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+  
+nav ul li ul li a {
+    padding: 8px 10px;
+    color: white;
+}
+
+/* ESTILOS LOGIN */
+
+body{
+  background: #0a141d;
+}
+
+.wrapper{
+  width: 330px;
+  padding: 2rem 0 1rem 0;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper h1{
+    justify-content: center;
+
+  font-size: 2rem;
+  color: #07001f;
+}
+
+.wrapper p{
+  justify-content: center;
+  margin-bottom: 1.7rem;
+  color: #07001f;
+}
+
+form input{
+  width: 85%;
+  outline: none;
+  border: none;
+  background: #dfe9f5;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.recover{
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 0.2rem 1.7rem 0 0;
+}
+
+.recover a{
+  text-decoration: none;
+  color: #07001f;
+}
+
+button{
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  padding: 8px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  width: 85%;
+  background: lightblue;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover{
+  background: black;
+  color: white;
+}
+
+.or{
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.icons i{
+  color: #07001f;
+  padding: 00.8rem 1.5rem;
+  border-radius: 10px;
+  margin-left: .9rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 2px solid #dfe9f5;
+}
+
+.icons i:hover{
+  color: #fff !important;
+  background: #07001f;
+  transition: 1s;
+}
+
+.icons i:first-child{
+  color: green;
+}
+
+.icons i:last-child{
+  color: blue;
+}
+
+.not-member{
+  font-size: 0.8rem;
+  margin-top: 1.4rem;
+  color: #07001f;
+}
+
+.not-member a{
+  color: tomato;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/* ESTILOS FOOTER */
+.footer{
+  width: 100%;
+  background-color: #0a141d;
+  color: white;
+}
+
+.footer .grupo-2{
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.footer .grupo-2 small{
+  font-size: 15px;
+}
