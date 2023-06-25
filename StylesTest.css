@@ -8,6 +8,7 @@
 
 body{
 	font-family: 'Open Sans';
+    background-color: #0a141d;
 }
 
 /* ESTILOS HEADER */
@@ -123,67 +124,61 @@ nav ul li ul li a {
     color: white;
 }
 
-/* ESTILOS BODY */
-.contenido{
-    background-color: #0a141d;
-    color: white;
-    align-items: center;
+/* ESTILOS MAIN */
+.main{
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    background-color: #0a141d;
 }
 
-.main-info{
-    display: table-cell;
-    padding-left: 50px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 50px;
-}
-
-.main-info:nth-child(1) h1{
-    font-weight: bold;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.main-info:nth-child(2) h1{
-    font-weight: bold;
-    font-style: italic;
-    margin-bottom: 15px;
-}
-
-.main-info:nth-child(1) p{
-    margin-bottom: 15px;
-}
-
-.main-info:nth-child(2) p{
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.contenido .main-info .main-img-1{
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 80%;
-    margin-left: 65px;
-}
-
-.contenido .main-info .main-img-2{
-    padding: 10px 10px 10px 10px;
-    display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+/* ESTILO SECTION */
+.section{
+    margin-top: 875px;
+    margin-bottom: 1px;
     width: 65%;
-    margin-left: 115px;
+    height: 280%;
+    background-color: lightgreen;
 }
 
-.my-button {
+article .title {
+    color: white;
+    font-size: 28px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imagen {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imagen img{
+    width: 55%;
+}
+
+.parrafo {
+    text-align: center;
+    font-size: larger;
+    color: white;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.FirstButtons{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.FirstButtons a{
     display: inline-block;
     padding: 10px 25px;
-    margin-top: 15px;
     margin-left: 50px;
     margin-bottom: 30px;
     background-color: white;
@@ -192,93 +187,39 @@ nav ul li ul li a {
     border-radius: 30px;
     transition: background-color 0.3s ease;
 }
-  
-.my-button:hover {
+
+.FirstButtons a:hover{
     background-color: lightblue;
     color: black;
 }
-  
-.my-button:focus {
+
+.FirstButtons a:focus {
     outline: none;
     box-shadow: 0 0 5px lightblue;
 }
-  
-.my-button:active {
+
+.FirstButtons a:active{
     background-color: white;
     transform: translateY(1px);
 }
 
-.my-button-2 {
-    display: inline-block;
-    padding: 10px 25px;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-  
-.my-button-2:hover {
-    background-color: lightblue;
-    color: black;
-}
-  
-.my-button-2:focus {
-    outline: none;
-    box-shadow: 0 0 5px lightblue;
-}
-  
-.my-button-2:active {
-    background-color: white;
-    transform: translateY(1px);
+.ClassTable h1{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.my-button-3 {
-    display: inline-block;
-    padding: 10px 25px;
-    margin-top: 15px;
-    margin-bottom: 60px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: background-color 0.3s ease;
-}
-  
-.my-button-3:hover {
-    background-color: lightblue;
-    color: black;
-}
-  
-.my-button-3:focus {
-    outline: none;
-    box-shadow: 0 0 5px lightblue;
-}
-  
-.my-button-3:active {
-    background-color: white;
-    transform: translateY(1px);
-}
-
-/* ESTILOS TABLA */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-main.table {
-    width: 82vw;
+.ClassTable {
+    text-align: center;
+    margin-left: 75px;
+    margin-top: 5px;
     height: 90vh;
+    width: 110vh;
     background-color: #fff5;
-
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
-
     overflow: hidden;
 }
 
@@ -312,7 +253,6 @@ table, th, td {
 }
 
 thead th {
-    position: sticky;
     top: 0;
     left: 0;
     background-color: rgba(16, 56, 231, 0.333);
@@ -339,7 +279,6 @@ tbody tr td img {
     transition: .2s ease-in-out;
 }
 
-
 @media (max-width: 1000px) {
     td:not(:first-of-type) {
         min-width: 12.1rem;
@@ -350,131 +289,49 @@ thead th:hover {
     color: lightyellow;
 }
 
-/* ESTILOS CONTACTO */
-.contacto {
+/* ESTILOS ASIDE */
+.aside{
     text-align: center;
-    font-size: 2em;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 30%;
+    height: 100%;
+    background-color: rosybrown;
 }
 
-.contact-wrapper {
-    margin-top: 40px;
+.title-2 {
+    color: white;
+    font-size: 28px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-style: italic;
 }
 
-.contact-wrapper > * {
-    padding: 1em;
+.img-aside {
+    margin-top: 20px;
+    width: 200px;
+    height: 100px;
 }
 
-.contact-form {
-    background: white;
-    margin-bottom: 17px ;
-    color: black;
+.aside a{
+    text-decoration: none;
 }
 
-.contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.contact-form form label {
-    display: block;
-}
-
-.contact-form form p {
-    margin: 0;
-    padding: 1em;
-}
-
-.contact-form form .block {
-    grid-column: 1 / 3;
-}
-
-.contact-form form button{
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: #fff;
-    border-bottom: 1px solid #d63031;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: black;
-    border-bottom: 1px solid #d63031;
-}
-
-.contact-form form button {
-    background: lightblue;
-    color: black;
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
-}
-
-.contact-form form button:hover,
-.contact-form form button:focus {
-    background: black;
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
-}
-
-/* CONTACT INFO */
-.contact-info {
-    background: #000;
-}
-
-.contact-info .fas{
-    margin-right: 10px;
-}
-
-.contact-info h4, .contact-info ul, .contact-info {
-    margin: 0 0 1rem 0;
-}
-
-.contact-info p{
-    text-align: left;
-}
-
-/* LARGE SIZE */
-.container {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-@media(min-width: 700px) {
-    .contact-wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .contact-wrapper > * {
-        padding: 2em;
-    }
-    .contact-info h4,
-    .contact-info ul,
-    .contact-info p {
-        text-align: left;
-    }
+.EnlaceTexto{
+    text-align: center;
+    font-size: larger;
+    color: white;
+    margin-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
 }
 
 /* ESTILOS FOOTER */
 .footer{
+    margin-top: 1000px;
     width: 100%;
     background-color: #0a141d;
-    color: white;
 }
 
 .footer .grupo-1{
