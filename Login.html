@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="Estilos/LoginStyles.css">
 	<link rel="stylesheet" href="Estilos/MainStyles.css">
     <link rel="shortcut icon" href="img/icon.webp">
+	<script src="JS/LoginUser.js"></script>
 	<!-- ICONS -->
 	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -51,14 +52,14 @@
 						<div class="wrapper">
                             <h1>Bienvenido</h1>
                             <p>¡Un gusto verte de nuevo <br> te hemos extrañado!</p>
-                            <form>
-                              <input type="text" placeholder="Usuario" required>
-                              <input type="password" placeholder="Contraseña" required>
+                            <form id="loginForm">
+                              <input type="text" placeholder="Usuario" id="usernameInput" required>
+                              <input type="password" placeholder="Contraseña" id="passwordInput" required>
                               <p class="recover">
                                 <a href="#">Recuperar contraseña</a>
                               </p>
                             <closeform></closeform></form>
-                            <button>Ingresar</button>
+                            <button type="submit" id="loginButton" onclick="login()">Ingresar</button>
                             <p class="or">
                               ----- o continúa con -----
                             </p>
@@ -72,7 +73,6 @@
                             </div>
                           </div>
 					</div>
-			
 				</div>
 			</main>
 		</div>
